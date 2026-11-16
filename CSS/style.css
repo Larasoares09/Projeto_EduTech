@@ -17,10 +17,18 @@ p {
     margin:10px 0;
 }
 
-head {
+header {
+    display: flex; /* Ativa o flex*/
+    justify-content: space-between; /* Logo de um canto e menu de outro*/
+    align-items: center; /* Alinha os itens no meio na vertical*/
     background-color: white;
     color: #1a4db3;
-    padding: 20px 0;
+    padding: 10px 20px;
+}
+
+.menu {
+    display: flex; /*Links ficam em linha*/
+    gap: 15px; /* Espaço entre os links*/
 }
 
 footer {
@@ -62,6 +70,11 @@ nav a {
 
 nav a:hover {
     color: #ff6a00;
+}
+
+.ativo {
+    color: darkorange; /* Cor de texto */
+    font-weight: bold; 
 }
 
 /* SEÇÃO PRINCIPAL DA PÁGINA INÍCIO */
@@ -115,4 +128,60 @@ nav a:hover {
     border: 1px solid #dddddd;
     border-radius: 8px;
 }
+
+ /* PÁGINA CURSOS */
+.curso {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    transition: 0.2s; /* Hover suave*/
+    padding: 15px;
+    margin: 15px;
+    border: 4px solid wheat;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.curso:hover {
+    transform:translateY(-3px); /*Sobe um pouco*/
+    box-shadow: 0 6px 14px rgba(0,0,0, 0.12); /*Projeção de sombra*/
+}
+
+.curso img {
+    width: 100%;
+    height: 140px;
+    object-fit: contain;
+    background-color: #ffffff;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+/* PÁGINA CONTATO */
+input,textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border: 2px solid #cccc;
+    border-radius: 8px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid #1a4db3;
+}
+
+button{
+    background-color: #ff6a00;
+    color: #dddddd;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+ #containerFormContato {
+    text-align: center;
+ }
+
+
 
